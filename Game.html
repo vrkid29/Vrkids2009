@@ -86,6 +86,21 @@
         }
       }
     </script>
+    <script>
+     function toggleButton(button) {
+        var allButtons = document.querySelectorAll('#top-bar button');
+        allButtons.forEach(function(btn) {
+          if (btn !== button) {
+            btn.classList.remove('clicked');
+          }
+        });
+        button.classList.add('clicked');
+        
+        if (button.id === 'about-button') {
+          window.location.href = ' https://vrkid29.github.io/Vrkids2009/';
+        }
+      }
+      <script>
     <div style="text-align:center; margin-top: 12%;">
 </div>
 <script>
