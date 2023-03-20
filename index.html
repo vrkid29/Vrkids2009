@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Light Blue Background with Top Bar and Buttons</title>
+    <style>
+      body {
+        background-color: #333333;
+        margin: 0;
+        padding: 0;
+      }
+      #top-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #000000;
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+      }
+      #top-bar button {
+        background-color: transparent;
+        border: none;
+        color: #FFFFFF;
+        padding: 12px 24px;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px #000000;
+        transition: all 0.2s ease-in-out;
+        outline: none;
+      }
+      #top-bar button:hover {
+        box-shadow: 0px 2px 16px #000000;
+        transform: scale(1.05);
+      }
+      #top-bar button:focus {
+        outline: none;
+        box-shadow: 0px 0px 0px #000000, 0px 0px 8px #0a820a;
+        border: 2px solid #0a820a;
+      }
+      #top-bar button:focus:active {
+        box-shadow: 0px 0px 0px #000000, 0px 0px 8px #0a820a;
+        border: 2px solid #0a820a;
+      }
+      #top-bar button.clicked {
+        box-shadow: none;
+        background-color: #0a820a; /* Green */
+      }
+      #top-bar button + button {
+        margin-left: 12px;
+      }
+      button:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+       <div id="top-bar">
+      <button id="home-button" onclick="toggleButton(this)">Home</button>
+      <button id="my-button" onclick="toggleButton(this)">Games</button>
+      <button id="about-button" onclick="toggleButton(this)">About</button>
+    </div>
+    <div style="text-align:center; margin-top: 8%;">
+    </div>
+    <!-- Your website content goes here -->
+    <div style="text-align:center; margin-top: 8%;">
+      <h1 style="color: white;">Welcome to VRKids2009's Games!</h1>
+      <h2 style="color: red; font-size: 20px; margin-top: -20px;">v4</h2>
+    </div>
+    <div style="text-align:center; margin-top: 10%;">
+  <p id="random-text" style="color: white;"></p>
+</div>
+<script>
+  var texts = ["Only play these with permission", "I will try to update every week", "Fun Fact: This was made with ChatGpt", "What should I add next?"];
+  var randomIndex = Math.floor(Math.random() * texts.length);
+  var randomText = texts[randomIndex];
+  document.getElementById("random-text").innerHTML = randomText;
+</script>
+
+    <script>
+      function toggleButton(button) {
+        var allButtons = document.querySelectorAll('#top-bar button');
+        allButtons.forEach(function(btn) {
+          if (btn !== button) {
+            btn.classList.remove('clicked');
+          }
+        });
+        button.classList.add('clicked');
+        
+        if (button.id === 'my-button') {
+          window.location.href = 'https://games5.w3spaces.com/hello.html';
+        }
+      }
+    </script>
+    <div style="text-align:center; margin-top: 12%;">
+      <button style="background-color: #0a820a; color: #fff; border: none; padding: 12px 24px; border-radius: 50px; font-size: 16px; cursor: pointer; box-shadow: 0px 0px 10px #000000; transition: all 0.2s ease-in-out; outline: none;">
+        Play Now!
+      </button>
+      <style>
+</div>
+<iframe src="https://www.youtube.com/watch?v=PhPGEDxq780" style="width: 300px; height: 150px; border: none; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); position: fixed; top: 50%; left: 130px; transform: translateY(-10%) translateX(225%);"></iframe>
+  </body>
+</html>
