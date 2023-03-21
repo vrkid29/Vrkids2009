@@ -21,7 +21,7 @@
         z-index: 1;
       }
       #top-bar button {
-        background-color: transparent;
+        background-color: transparent;                                                 
         border: none;
         color: #FFFFFF;
         padding: 12px 24px;
@@ -73,8 +73,7 @@
 </div>
     <div style="text-align:center; margin-top: 12%;">
 </div>
-<button id="iframe-button" onclick="showIframe()">Google</butt on>
-
+  <h1 style="color: white; position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%);">Bookmarklets</h1> <!-- updated element -->
 <style>
   #iframe-button {
     position: fixed;
@@ -104,6 +103,41 @@
     transform: scale(1) translate(-50%, -50%);
   }
 </style>
+<button id="Google-test" onclick="window.location.href='https://www.google.com/'">Go to Bookmarklet Page</button>
+
+<style>
+  #Google-test {
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00aa00;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #000000;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+  }
+
+  #Google-test:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+</style>
+<style>
+  .line {
+    position: fixed;
+    left: 0;
+    top: 40%;
+    height: 7px;
+    width: 100%;
+    background-color: blue;
+    z-index: 1;
+  }
+</style>
+<div class="line"></div>
 
 <body>
 
