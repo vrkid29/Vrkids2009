@@ -55,78 +55,12 @@
       button:hover {
         transform: scale(1.1);
       }
-      
-.box-button {
-  display: inline-block;
-  position: absolute;
-  top: 150px;
-  left: 530px;
-  overflow: hidden;
-  width: 210px;
-  height: 200px;
-  border: 2px solid #ccc;
-  border-radius: 20px 20px 20px 20px;
-  transition: all 0.3s ease-in-out;
-}
-.box-button:hover {
-  transform: scale(1.2);
-  z-index: 1;
-}
-
-.box-button img {
-  display: block;
-  max-width: 100%;
-  height: 230px;
-  width: 270px;
-  transition: all 0.3s ease-in-out;
-}
-
-.box-button:hover img {
-  transform: scale(1.2);
-}
-
-.bur-bis {
-  display: inline-block;
-  position: absolute;
-  top: 150px;
-  left: 50px;
-  overflow: hidden;
-  width: 210px;
-  height: 200px;
-  border: 2px solid #ccc;
-  border-radius: 20px 20px 20px 20px;
-  transition: all 0.3s ease-in-out;
-}
-.bur-bis:hover {
-  transform: scale(1.2);
-  z-index: 1;
-}
-
-.bur-bis img {
-  display: block;
-  max-width: 100%;
-  height: 230px;
-  width: 270px;
-  transition: all 0.3s ease-in-out;
-}
-
-.bur-bis:hover img {
-  transform: scale(1.2);
-}
-
     </style>
   </head>
   <body>
-  <div class="box-button">
-  <img src="https://th.bing.com/th/id/OIP.8THDkuASawqsvl6HxkzuCgHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7" alt="Image">
-</div>
-<div class="bur-bis">
-  <img src="https://th.bing.com/th/id/OIP.8THDkuASawqsvl6HxkzuCgHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7" alt="Bur-Bis">
-</div>
-
        <div id="top-bar">
-<button id="home-button" onclick="window.location.href='https://vrkid29.github.io/Vrkids2009/'">Home</button>
-      <button id="my-button" onclick="toggleButton(this)">Games</button>
+<button id="home-button" <button id="home-button" onclick="window.location.href='https://vrkid29.github.io/Vrkids2009/'">Home</button>
+<button id="my-button" onclick="'">Games</button>
 <button id="about-button" onclick="window.location.href='https://vrkid29.github.io/Vrkids2009/About.html'">About</button>
     </div>
     <div style="text-align:center; margin-top: 8%;">
@@ -139,65 +73,41 @@
 </div>
     <div style="text-align:center; margin-top: 12%;">
 </div>
-<button id="iframe-button" onclick="window.location.href='https://vrkid29.github.io/Vrkids2009/Snowrider3d.html'">SnowRider3D</button>
-<button id="iframe-buttonBurBis" onclick="window.location.href='https://vrkid29.github.io/Vrkids2009/BurritoBison.html'">BurritoBison</button>
+<button class="image-button" onclick="window.location.href='Games/Toss-the-turtle.html'" style="position: relative; top: -90px; left: 90px;">
+  <img src="https://raw.githubusercontent.com/Gamerboy199/bugs/main/tosstheturtle/tosstheturtle.png" alt="Example Image" width="100" height="100">
+  <p>Toss The Turtle</p>
+</button>
 <style>
-  #iframe-button {
-    position: fixed;
-    left: 8%;
-    top: 42%;
-    background-color: #00aa00;
-    border: none;
-    color: #ffffff;
-    padding: 12px 24px;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 0px 0px 10px #000000;
-    transition: all 0.2s ease-in-out;
-    outline: none;
-    transform: translate(-50%, -50%);
-  }
+.image-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:  #00aa00;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
 
-  #iframe-button:hover {
-    box-shadow: 0px 2px 16px #000000;
-    transform: scale(1.05) translate(-50%, -50%);
-  }
+.image-button img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
 
-  #iframe-button:active {
-    box-shadow: 0px 0px 0px #000000, 0px 0px 8px #0a820a;
-    border: 2px solid #0a820a;
-    transform: scale(1) translate(-50%, -50%);
-  }
-  
-  #iframe-buttonBurBis {
-    position: fixed;
-    left: 35%;
-    top: 42%;
-    background-color: #00aa00;
-    border: none;
-    color: #ffffff;
-    padding: 12px 24px;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 0px 0px 10px #000000;
-    transition: all 0.2s ease-in-out;
-    outline: none;
-    transform: translate(-50%, -50%);
-  }
+.text-box {
+  text-align: center;
+}
 
-  #iframe-buttonBurBis:hover {
-    box-shadow: 0px 2px 16px #000000;
-    transform: scale(1.05) translate(-50%, -50%);
-  }
-
-  #iframe-buttonBurBis:active {
-    box-shadow: 0px 0px 0px #000000, 0px 0px 8px #0a820a;
-    border: 2px solid #0a820a;
-    transform: scale(1) translate(-50%, -50%);
-  }
+.text-box p {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
 </style>
+
 
 <body>
 
