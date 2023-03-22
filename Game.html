@@ -60,7 +60,7 @@
   display: inline-block;
   position: absolute;
   top: 150px;
-  left: 50px;
+  left: 315px;
   overflow: hidden;
   width: 210px;
   height: 200px;
@@ -85,12 +85,45 @@
   transform: scale(1.2);
 }
 
+.bur-bis {
+  display: inline-block;
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  overflow: hidden;
+  width: 210px;
+  height: 200px;
+  border: 2px solid #ccc;
+  border-radius: 20px 20px 20px 20px;
+  transition: all 0.3s ease-in-out;
+}
+.bur-bis:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.bur-bis img {
+  display: block;
+  max-width: 100%;
+  height: 230px;
+  width: 270px;
+  transition: all 0.3s ease-in-out;
+}
+
+.bur-bis:hover img {
+  transform: scale(1.2);
+}
+
     </style>
   </head>
   <body>
   <div class="box-button">
   <img src="https://th.bing.com/th/id/OIP.8THDkuASawqsvl6HxkzuCgHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7" alt="Image">
 </div>
+<div class="bur-bis">
+  <img src="https://th.bing.com/th/id/OIP.8THDkuASawqsvl6HxkzuCgHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7" alt="Bur-Bis">
+</div>
+
        <div id="top-bar">
 <button id="home-button" onclick="window.location.href='https://vrkid29.github.io/Vrkids2009/'">Home</button>
       <button id="my-button" onclick="toggleButton(this)">Games</button>
